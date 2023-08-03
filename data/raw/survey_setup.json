@@ -18,7 +18,7 @@
     },
     "q4": {
         "text": "Is your group:",
-        "type": "radio",
+        "type": "checkbox",
         "options": [
             "The main RSE Group for the university/research organisation",
             "An RSE Group for a specific subset/group within the university/research organisation",
@@ -38,7 +38,7 @@
     },
     "q7": {
         "text": "Where is your group based?",
-        "type": "radio",
+        "type": "checkbox",
         "options": [
             "IT/Research IT",
             "Academic Department (supporting whole Institution)",
