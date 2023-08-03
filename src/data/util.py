@@ -78,9 +78,8 @@ def process_checkboxes(dset, setup):
         nopts = len(opts)
 
         # check if none of the options are in the response and append "Other"
-        opts_extended = opts + [""]  # add empty string to opts to catch empty responses
         dset[qst] = dset[qst].apply(lambda x: "Other, " + x
-                                    if all(opt not in x for opt in opts_extended)
+                                    if all(opt not in x for opt in opts)
                                     else x)
 
         # create extra columns for each option
