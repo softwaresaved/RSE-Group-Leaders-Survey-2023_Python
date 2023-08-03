@@ -1,6 +1,7 @@
 """ Utility functions for data processing. """
 
 import json
+import numpy as np
 import pandas as pd
 
 
@@ -12,7 +13,7 @@ def read_setup_and_data(path='../data/raw/',
         path (str): path to the setup and data files
         fname_setup (str): name of the setup file
         fname_data (str): name of the data file
-    Returns: 
+    Returns:
         setup (dict): setup dictionary
         dset (pd.DataFrame): data frame of the survey responses
     """
@@ -77,18 +78,19 @@ def process_checkboxes(dset, setup):
         nopts = len(opts)
 
         # check if none of the options are in the response and append "Other"
-        opts_extended = opts + [""] # add empty string to opts to catch empty responses
-        dset[qst] = dset[qst].apply(lambda x: "Other, " + x 
-                                    if all(opt not in x for opt in opts_extended) 
+        opts_extended = opts + [""]  # add empty string to opts to catch empty responses
+        dset[qst] = dset[qst].apply(lambda x: "Other, " + x
+                                    if all(opt not in x for opt in opts_extended)
                                     else x)
-        
+
         # create extra columns for each option
         extra_cols = [f"{qst}_option_{iopt+1}" for iopt in range(nopts)]
-        dset[extra_cols] = ""
+        # dset[extra_cols] = ""
+        dset[extra_cols] = False
         for iopt, opt in enumerate(opts):
             dset.loc[dset[qst].str.contains(opt),
-                    f"{qst}_option_{iopt+1}"] = opt 
-        
+                     f"{qst}_option_{iopt+1}"] = True  # opt
+
         # if we have Other responses, create a new column and populate it
         # with the given other responses
         nother = dset[qst].str.contains("Other,").sum()
@@ -96,7 +98,38 @@ def process_checkboxes(dset, setup):
             extra_column = f"{qst}_option_other"
             dset[extra_column] = ""
             dset.loc[dset[qst].str.contains("Other"), extra_column] = \
-                dset.loc[dset[qst].str.contains("Other"), qst] 
+                dset.loc[dset[qst].str.contains("Other"), qst]
             dset.loc[:, extra_column] = dset.loc[:, extra_column].str.replace("Other, ", "")
-    
+
     return dset
+
+
+def display_checkbox_stats(dset, setup, qst):
+    """ Display the statistics for the checkbox responses.
+    Args:
+        dset (pd.DataFrame): data frame of the survey responses
+        setup (dict): setup dictionary
+        qst (str): question number
+    """
+    cols = [col for col in dset.columns if qst in col][1:]
+    opts = setup[qst]["options"]
+
+    # create a new dataframe with the melted values of these columns
+    dset_melted = pd.melt(dset.reset_index(),
+                          id_vars=['Timestamp'],
+                          value_vars=cols,
+                          var_name='answer')
+    dset_melted = dset_melted[dset_melted['value'] == True]
+    dset_melted = dset_melted.drop(columns=['value'])
+    dset_melted = dset_melted.set_index('Timestamp')
+
+    # replace the answer column with the option name
+    dset_melted['answer'] = dset_melted['answer'].apply(lambda x: opts[int(x.split('_')[-1])-1])
+
+    # create a stats dataframe with the counts for the answer column
+    dset_stats = dset_melted['answer'].value_counts().to_frame(name='count')
+    dset_stats['percentage'] = np.round(100 * dset_stats['count'] / dset.shape[0])
+
+    # display the stats dataframe
+    pd.set_option('precision', 0)
+    print(dset_stats.to_string())
