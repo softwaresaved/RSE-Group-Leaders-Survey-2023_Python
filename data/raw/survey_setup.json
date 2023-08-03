@@ -1,0 +1,129 @@
+{
+    "q1": {
+        "text": "I give permission for a summary of the results from this survey to be published with me as a named collaborator",
+        "type": "radio",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "required": true
+    },
+    "q2": {
+        "text": "Name",
+        "type": "text"
+    },
+    "q3": {
+        "text": "What is the name of your group?",
+        "type": "text"
+    },
+    "q4": {
+        "text": "Is your group:",
+        "type": "radio",
+        "options": [
+            "The main RSE Group for the university/research organisation",
+            "An RSE Group for a specific subset/group within the university/research organisation",
+            "An RSE Group for multiple universities/research organisations"
+        ],
+        "required": true
+    },
+    "q5": {
+        "text": "What is your position in the RSE Group?",
+        "type": "text",
+        "required": true
+    },
+    "q6": {
+        "text": "In what year was your group founded?",
+        "type": "number",
+        "required": true
+    },
+    "q7": {
+        "text": "Where is your group based?",
+        "type": "radio",
+        "options": [
+            "IT/Research IT",
+            "Academic Department (supporting whole Institution)",
+            "Academic Department (supporting a specific domain)",
+            "Independent Institute/Facility",
+            "Other"
+        ],
+        "required": true
+    },
+    "q8": {
+        "text": "How many people were in your group when it started?",
+        "type": "number",
+        "required": false
+    },
+    "q9": {
+        "text": "How many people are currently in your group in total?",
+        "type": "number",
+        "required": true
+    },
+    "q10": {
+        "text": "How many people in your group are in a more senior role than a standard RSE (i.e. typically receiving greater pay than a postdoctoral researcher)?",
+        "type": "number",
+        "required": true
+    },
+    "q11": {
+        "text": "How many people in your group are in a less senior role than a standard RSE (e.g. a junior RSE)?",
+        "type": "number",
+        "required": true
+    },
+    "q12": {
+        "text": "How many staff have left your group in the last two years?",
+        "type": "number",
+        "required": true
+    },
+    "q13": {
+        "text": "Where did those staff go?",
+        "type": "text",
+        "required": true
+    },
+    "q14": {
+        "text": "How many new RSEs positions have been added to your group in the last two years?",
+        "type": "number",
+        "required": true
+    },
+    "q15": {
+        "text": "Please rate the level of demand for your Group's services",
+        "type": "checkbox",
+        "options": [
+            "Demand significantly greater than the number of RSEs",
+            "Demand greater than the number of RSEs",
+            "Demand is met by the number of RSEs",
+            "Demand is less than the number of RSEs",
+            "Demand is significantly less than the number of RSEs"
+        ],
+        "required": true
+    },
+    "q16": {
+        "text": "If demand for your services outstrips the number of RSEs, what causes this situation?",
+        "type": "checkbox",
+        "options": [
+            "We lack the funding to make new positions available",
+            "We have funding, but we can't find RSEs to hire",
+            "We can attract RSEs, but can't hire them because the salary and other benefits we can offer are not competitive",
+            "Hiring processes are long-winded, so we're always behind the demand curve"
+        ],
+        "required": true
+    },
+    "q17": {
+        "text": "Roughly what percentage of your roles are open-ended/permanent?",
+        "type": "text",
+        "required": true
+    },
+    "q18": {
+        "text": "Does your Group have a cost recovery target? If so, what is that cost recovery target?",
+        "type": "text",
+        "required": true
+    },
+    "q19": {
+        "text": "Roughly what percentage of your group's time is spent on free at point of use activities. e.g. Training, Institutional support, free project support/consultancy.",
+        "type": "text",
+        "required": true
+    },
+    "q20": {
+        "text": "Anything else you would like to add?",
+        "type": "text",
+        "required": true
+    }
+}
