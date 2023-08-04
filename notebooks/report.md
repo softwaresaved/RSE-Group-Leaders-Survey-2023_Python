@@ -201,3 +201,14 @@ Different internal research position: 1                                         
 ![png](report_files/report_4_23.png)
     
 
+
+## Q17: Roughly what percentage of your roles are open-ended/permanent?
+
+    Q17: Roughly what percentage of your roles are open-ended/permanent?
+
+
+
+    
+![png](report_files/report_6_1.png)
+    
+
