@@ -5,17 +5,17 @@
     Respondents - agreed sharing: 36
 
 
-## Overview of the questions
+## Overview of the answers
 
     
-    Is your group:
+    Q4: Is your group:
     
                                                                                           count  percentage
     The main RSE Group for the university/research organisation                              26          72
     An RSE Group for a specific subset/group within the university/research organisation      8          22
     An RSE Group for multiple universities/research organisations                             4          11
     
-    Where is your group based?
+    Q7: Where is your group based?
     
                                                         count  percentage
     IT/Research IT                                         14          39
@@ -24,14 +24,14 @@
     Academic Department - supporting a specific domain      4          11
     Independent Institute/Facility                          4          11
     
-    Please rate the level of demand for your Group's services
+    Q15: Please rate the level of demand for your Group's services
     
                                                           count  percentage
     Demand greater than the number of RSEs                   17          47
     Demand significantly greater than the number of RSEs     14          39
     Demand is met by the number of RSEs                       4          11
     
-    If demand for your services outstrips the number of RSEs, what causes this situation?
+    Q16: If demand for your services outstrips the number of RSEs, what causes this situation?
     
                                                                                                                      count  percentage
     Hiring processes are long-winded, so we're always behind the demand curve                                           21          58
