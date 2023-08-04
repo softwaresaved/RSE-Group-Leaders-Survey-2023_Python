@@ -8,7 +8,7 @@
 ## Overview of the answers
 
     
-    Q4: Is your group:
+    Q4: Is your group
     
                                                                                           count  percentage
     The main RSE Group for the university/research organisation                              26          72
@@ -19,6 +19,15 @@
 
     
 ![png](report_files/report_4_1.png)
+    
+
+
+    Q6: In what year was your group founded?
+
+
+
+    
+![png](report_files/report_4_3.png)
     
 
 
@@ -35,7 +44,61 @@
 
 
     
-![png](report_files/report_4_3.png)
+![png](report_files/report_4_5.png)
+    
+
+
+    Q8: How many people were in your group when it started?
+
+
+
+    
+![png](report_files/report_4_7.png)
+    
+
+
+    Q9: How many people are currently in your group in total?
+
+
+
+    
+![png](report_files/report_4_9.png)
+    
+
+
+    Q10: How many people in your group are in a more senior role than a standard RSE (i.e. typically receiving greater pay than a postdoctoral researcher)?
+
+
+
+    
+![png](report_files/report_4_11.png)
+    
+
+
+    Q11: How many people in your group are in a less senior role than a standard RSE (e.g. a junior RSE)?
+
+
+
+    
+![png](report_files/report_4_13.png)
+    
+
+
+    Q12: How many staff have left your group in the last two years?
+
+
+
+    
+![png](report_files/report_4_15.png)
+    
+
+
+    Q14: How many new RSEs positions have been added to your group in the last two years?
+
+
+
+    
+![png](report_files/report_4_17.png)
     
 
 
@@ -52,7 +115,7 @@
 
 
     
-![png](report_files/report_4_5.png)
+![png](report_files/report_4_19.png)
     
 
 
@@ -68,6 +131,6 @@
 
 
     
-![png](report_files/report_4_7.png)
+![png](report_files/report_4_21.png)
     
 
