@@ -7,7 +7,9 @@ import pandas as pd
 
 def read_setup_and_data(path='../data/raw/',
                         fname_setup='survey_setup',
-                        fname_data='rse_group_survey_2023_responses'):
+                        fname_data='rse_group_survey_2023_responses',
+                        fname_group_names='renaming_for_groups'
+                        ):
     """ Read in the setup and data files.
     Args:
         path (str): path to the setup and data files
@@ -20,7 +22,38 @@ def read_setup_and_data(path='../data/raw/',
     dset = pd.read_csv(f"{path}{fname_data}.csv", index_col=0)
     setup = json.load(open(f"{path}{fname_setup}.json", "r"))
 
-    return setup, dset
+    dset_gnames = pd.read_csv(f"{path}{fname_group_names}.csv")
+
+    return setup, dset, dset_gnames
+
+
+def rename_groups(dset, dset_gnames):
+    """ Rename the groups in the data frame of the survey responses
+        to resolve ambiguities.
+    Args:
+        dset (pd.DataFrame): data frame of the survey responses
+        dset_gnames (pd.DataFrame): data frame of the group names
+    Returns:
+        dset (pd.DataFrame): data frame of the survey responses with renamed groups
+    """
+
+    # original column order
+    cols = list(dset.columns)
+
+    # process the updated group names
+    col = 'What is the name of your group?'
+    dset_gnames = dset_gnames.drop(columns=[col, 'Is your group:'])
+    dset_gnames = dset_gnames.rename(columns={'New name of group': col})
+
+    # update the group names in the original dataset
+    dset = dset.drop(columns=[col])
+    dset = dset.reset_index().merge(dset_gnames, on='Name', how='left')
+    dset = dset.set_index('Timestamp')
+
+    # restore original column order
+    dset = dset[cols]
+
+    return dset
 
 
 def save_data(dset,

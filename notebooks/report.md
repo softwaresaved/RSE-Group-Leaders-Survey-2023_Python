@@ -35,11 +35,11 @@
     Q7: Where is your group based?
     
                                                         count  percentage
-    IT/Research IT                                         14          39
-    Other                                                   9          25
-    Academic Department - supporting whole Institution      5          14
-    Academic Department - supporting a specific domain      4          11
-    Independent Institute/Facility                          4          11
+    IT/Research IT                                         13          38
+    Other                                                   8          24
+    Academic Department - supporting whole Institution      5          15
+    Academic Department - supporting a specific domain      4          12
+    Independent Institute/Facility                          4          12
 
 
 
@@ -106,9 +106,9 @@
     Q15: Please rate the level of demand for your Group's services
     
                                                           count  percentage
-    Demand greater than the number of RSEs                   17          47
-    Demand significantly greater than the number of RSEs     14          39
-    Demand is met by the number of RSEs                       4          11
+    Demand greater than the number of RSEs                   16          48
+    Demand significantly greater than the number of RSEs     13          39
+    Demand is met by the number of RSEs                       4          12
     Demand is less than the number of RSEs                    0           0
     Demand is significantly less than the number of RSEs      0           0
 
@@ -123,10 +123,10 @@
     Q16: If demand for your services outstrips the number of RSEs, what causes this situation?
     
                                                                                                                      count  percentage
-    Hiring processes are long-winded, so we're always behind the demand curve                                           21          58
-    We lack the funding to make new positions available                                                                 12          33
-    We can attract RSEs, but can't hire them because the salary and other benefits we can offer are not competitive      9          25
-    We have funding, but we can't find RSEs to hire                                                                      7          19
+    Hiring processes are long-winded, so we're always behind the demand curve                                           20          61
+    We lack the funding to make new positions available                                                                 11          33
+    We can attract RSEs, but can't hire them because the salary and other benefits we can offer are not competitive      9          27
+    We have funding, but we can't find RSEs to hire                                                                      7          21
 
 
 
