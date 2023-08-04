@@ -56,9 +56,9 @@ def rename_groups(dset, dset_gnames):
     return dset
 
 
-def save_data(dset,
-              path='../data/processed/',
-              fname='rse_group_survey_2023_responses_processed'):
+def save_dataset(dset,
+                 fname='rse_group_survey_2023_responses_processed',
+                 path='../data/processed/'):
     """ Save the data frame of the survey responses.
     Args:
         dset (pd.DataFrame): data frame of the survey responses
