@@ -107,7 +107,7 @@ def process_checkboxes(dset, setup):
     return dset
 
 
-def display_checkbox_stats(dset, setup, qst):
+def derive_checkbox_stats(dset, setup, qst):
     """ Display the statistics for the checkbox responses.
     Args:
         dset (pd.DataFrame): data frame of the survey responses
@@ -139,6 +139,4 @@ def display_checkbox_stats(dset, setup, qst):
         if opt not in dset_stats.index:
             dset_stats.loc[opt, :] = 0
 
-    # display the stats dataframe
-    pd.set_option('precision', 0)
-    print(dset_stats.to_string())
+    return dset_stats
