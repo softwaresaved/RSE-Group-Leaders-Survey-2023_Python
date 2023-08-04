@@ -127,13 +127,17 @@ def display_checkbox_stats(dset, setup, qst):
     dset_melted = dset_melted.set_index('Timestamp')
 
     # replace the answer column with the option name
-    # dset_melted['answer'] = dset_melted['answer'].apply(lambda x: opts[int(x.split('_')[-1])-1])
     dset_melted["answer"].replace(f"{qst}_option_", "", regex=True, inplace=True)    
     dset_melted['answer'] = dset_melted['answer'].apply(lambda x: opts[int(x) - 1])
 
     # create a stats dataframe with the counts for the answer column
     dset_stats = dset_melted['answer'].value_counts().to_frame(name='count')
     dset_stats['percentage'] = np.round(100 * dset_stats['count'] / dset.shape[0])
+
+    # add 0 for count and percentage for option not present in dset_stats
+    for opt in opts:
+        if opt not in dset_stats.index:
+            dset_stats.loc[opt, :] = 0
 
     # display the stats dataframe
     pd.set_option('precision', 0)

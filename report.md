@@ -30,6 +30,8 @@
     Demand greater than the number of RSEs                   17          47
     Demand significantly greater than the number of RSEs     14          39
     Demand is met by the number of RSEs                       4          11
+    Demand is less than the number of RSEs                    0           0
+    Demand is significantly less than the number of RSEs      0           0
     
     Q16: If demand for your services outstrips the number of RSEs, what causes this situation?
     
