@@ -77,6 +77,10 @@ def process_checkboxes(dset, setup):
         opts = setup[qst]["options"]
         nopts = len(opts)
 
+        # replace ( with - and ) with ""
+        dset[qst] = dset[qst].str.replace("(", "- ", regex=True)
+        dset[qst] = dset[qst].str.replace(")", "", regex=True)
+
         # check if none of the options are in the response and append "Other"
         dset[qst] = dset[qst].apply(lambda x: "Other, " + x
                                     if all(opt not in x for opt in opts)
@@ -123,7 +127,9 @@ def display_checkbox_stats(dset, setup, qst):
     dset_melted = dset_melted.set_index('Timestamp')
 
     # replace the answer column with the option name
-    dset_melted['answer'] = dset_melted['answer'].apply(lambda x: opts[int(x.split('_')[-1])-1])
+    # dset_melted['answer'] = dset_melted['answer'].apply(lambda x: opts[int(x.split('_')[-1])-1])
+    dset_melted["answer"].replace(f"{qst}_option_", "", regex=True, inplace=True)    
+    dset_melted['answer'] = dset_melted['answer'].apply(lambda x: opts[int(x) - 1])
 
     # create a stats dataframe with the counts for the answer column
     dset_stats = dset_melted['answer'].value_counts().to_frame(name='count')

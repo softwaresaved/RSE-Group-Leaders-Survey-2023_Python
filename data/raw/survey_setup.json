@@ -41,8 +41,8 @@
         "type": "checkbox",
         "options": [
             "IT/Research IT",
-            "Academic Department (supporting whole Institution)",
-            "Academic Department (supporting a specific domain)",
+            "Academic Department - supporting whole Institution",
+            "Academic Department - supporting a specific domain",
             "Independent Institute/Facility",
             "Other"
         ],
