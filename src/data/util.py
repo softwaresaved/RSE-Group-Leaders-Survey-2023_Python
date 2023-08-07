@@ -91,15 +91,21 @@ def validate_setup_and_data(setup, dset):
     return validated
 
 
-def preprocess_text(dset, setup):
+def preprocess_text(dset, setup, verbose=False):
     """ Process the text responses.
     Args:
         dset (pd.DataFrame): data frame of the survey responses
         setup (dict): setup dictionary
+        verbose (bool): print the preprocessing steps, default False
     Returns:
         dset (pd.DataFrame): data frame of the survey responses
 
     """
+
+    if verbose:
+        print("\nPreprocessing text responses to")
+        print("- fill empty cells with ''")
+        print("- replace new line characters with spaces")
 
     for qst in setup.keys():
         if setup[qst]["type"] != "text":
@@ -113,7 +119,7 @@ def preprocess_text(dset, setup):
     return dset
 
 
-def preprocess_checkboxes(dset, setup):
+def preprocess_checkboxes(dset, setup, verbose=False):
     """ Process the checkbox responses.
     Args:
         dset (pd.DataFrame): data frame of the survey responses
@@ -121,6 +127,13 @@ def preprocess_checkboxes(dset, setup):
     Returns:
         dset (pd.DataFrame): data frame of the survey responses
     """
+
+    if verbose:
+        print("\nPreprocessing checkbox responses to")
+        print("- fill empty cells with ''")
+        print("- replace ( with - and ) with ''")
+        print("- create extra columns for each option, including Other if it exists")
+
     for qst in setup.keys():
         if setup[qst]["type"] != "checkbox":
             continue
@@ -143,7 +156,6 @@ def preprocess_checkboxes(dset, setup):
 
         # create extra columns for each option
         extra_cols = [f"{qst}_option_{iopt+1}" for iopt in range(nopts)]
-        # dset[extra_cols] = ""
         dset[extra_cols] = False
         for iopt, opt in enumerate(opts):
             dset.loc[dset[qst].str.contains(opt),
