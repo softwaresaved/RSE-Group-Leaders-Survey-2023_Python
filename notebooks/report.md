@@ -289,6 +289,27 @@
     
 
 
+## Q9: 
+
+    Q9: How many people are currently in your group in total?
+    
+    Preprocessing responses to
+    - drop the empty rows
+    Saved data to q9_stats.csv
+
+
+
+    
+![png](report_files/report_12_1.png)
+    
+
+
+
+    
+![png](report_files/report_12_2.png)
+    
+
+
 ## Percentage growth in group size
 
     How many people are currently in your group in total?
@@ -301,7 +322,7 @@
 
 
     
-![png](report_files/report_12_1.png)
+![png](report_files/report_14_1.png)
     
 
 
@@ -323,6 +344,6 @@ Stacked bar chart that plots how many people are in the group now (Q9) with the 
 
 
     
-![png](report_files/report_14_1.png)
+![png](report_files/report_16_1.png)
     
 

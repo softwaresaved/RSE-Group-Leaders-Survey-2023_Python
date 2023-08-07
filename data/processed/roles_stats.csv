@@ -1,36 +1,36 @@
-q3,Junior RSEs (%),Standard RSEs (%),Senior RSEs (%)
-Imperial College London,25.0,0.0,75.0
-Newcastle University,0.0,75.0,25.0
-"SWC/GCNU Neuroinformatics Unit, UCL",0.0,0.0,100.0
-Kings College London,0.0,0.0,100.0
-University of Oxford,0.0,20.0,80.0
-Alan Turing Institute,4.545454545454546,56.81818181818182,38.63636363636363
-University of Cambridge,0.0,80.0,20.0
-University of Leeds,0.0,100.0,0.0
-UCL,5.0,45.0,50.0
-"Research Software Group, St. Andrews",17.647058823529413,11.764705882352942,70.58823529411765
-QUB,0.0,50.0,50.0
-University of Exeter,0.0,76.92307692307692,23.076923076923077
-University of Sheffield,0.0,66.66666666666667,33.333333333333336
-QMUL,50.0,25.0,25.0
-University of Bath,0.0,100.0,0.0
-"Castep Development, York",20.0,40.0,40.0
-Roslin Franklin Institute,11.11111111111111,55.55555555555556,33.333333333333336
-University of Reading,0.0,0.0,100.0
-UKAEA,11.11111111111111,38.888888888888886,50.0
-University of Nottingham,10.344827586206897,62.06896551724138,27.586206896551722
-University of Birmingham,0.0,28.571428571428573,71.42857142857143
-University of Warwick,0.0,50.0,50.0
-University of Manchester,10.0,60.0,30.0
-University of Bristol,0.0,80.0,20.0
-King's Digital Lab,0.0,30.76923076923077,69.23076923076923
-MVLS University of Glasgow,0.0,0.0,100.0
-University of York,0.0,80.0,20.0
-"Digital Humanities Group, Lancaster",0.0,100.0,0.0
-University of Liverpool,20.0,20.0,60.0
-University of Southampton,0.0,40.0,60.0
-Swansea Academy of Advanced Computing,0.0,66.66666666666667,33.333333333333336
-"Soft Matter and Biophysics, Strathclyde",50.0,25.0,25.0
-Lancaster University,0.0,0.0,100.0
-"EPCC, Edinburgh",30.18867924528302,32.075471698113205,37.735849056603776
-"Research IT, Bristol",28.571428571428573,0.0,71.42857142857143
+q3,q9,q11,q10,standard
+Imperial College London,8.0,25.0,75.0,0.0
+Newcastle University,20.0,0.0,25.0,75.0
+"SWC/GCNU Neuroinformatics Unit, UCL",4.0,0.0,100.0,0.0
+Kings College London,1.0,0.0,100.0,0.0
+University of Oxford,5.0,0.0,80.0,20.0
+Alan Turing Institute,44.0,4.545454545454546,38.63636363636363,56.81818181818182
+University of Cambridge,10.0,0.0,20.0,80.0
+University of Leeds,5.0,0.0,0.0,100.0
+UCL,40.0,5.0,50.0,45.0
+"Research Software Group, St. Andrews",17.0,17.647058823529413,70.58823529411765,11.764705882352942
+QUB,4.0,0.0,50.0,50.0
+University of Exeter,13.0,0.0,23.076923076923077,76.92307692307692
+University of Sheffield,12.0,0.0,33.333333333333336,66.66666666666667
+QMUL,4.0,50.0,25.0,25.0
+University of Bath,4.0,0.0,0.0,100.0
+"Castep Development, York",5.0,20.0,40.0,40.0
+Roslin Franklin Institute,18.0,11.11111111111111,33.333333333333336,55.55555555555556
+University of Reading,2.0,0.0,100.0,0.0
+UKAEA,18.0,11.11111111111111,50.0,38.888888888888886
+University of Nottingham,29.0,10.344827586206897,27.586206896551722,62.06896551724138
+University of Birmingham,14.0,0.0,71.42857142857143,28.571428571428573
+University of Warwick,6.0,0.0,50.0,50.0
+University of Manchester,40.0,10.0,30.0,60.0
+University of Bristol,10.0,0.0,20.0,80.0
+King's Digital Lab,13.0,0.0,69.23076923076923,30.76923076923077
+MVLS University of Glasgow,1.0,0.0,100.0,0.0
+University of York,5.0,0.0,20.0,80.0
+"Digital Humanities Group, Lancaster",2.0,0.0,0.0,100.0
+University of Liverpool,5.0,20.0,60.0,20.0
+University of Southampton,10.0,0.0,60.0,40.0
+Swansea Academy of Advanced Computing,3.0,0.0,33.333333333333336,66.66666666666667
+"Soft Matter and Biophysics, Strathclyde",4.0,50.0,25.0,25.0
+Lancaster University,1.0,0.0,100.0,0.0
+"EPCC, Edinburgh",106.0,30.18867924528302,37.735849056603776,32.075471698113205
+"Research IT, Bristol",7.0,28.571428571428573,71.42857142857143,0.0
