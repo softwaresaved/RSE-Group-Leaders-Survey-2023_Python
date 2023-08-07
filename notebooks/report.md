@@ -289,7 +289,23 @@
     
 
 
-## Q9: 
+## Q6 In what year was your group founded?
+
+    Q6: In what year was your group founded?
+    
+    Preprocessing responses to
+    - drop the empty rows
+    - keep only year >= 2012
+    Saved data to q6_stats.csv
+
+
+
+    
+![png](report_files/report_12_1.png)
+    
+
+
+## Q9: How many people are currently in your group in total?
 
     Q9: How many people are currently in your group in total?
     
@@ -300,13 +316,13 @@
 
 
     
-![png](report_files/report_12_1.png)
+![png](report_files/report_14_1.png)
     
 
 
 
     
-![png](report_files/report_12_2.png)
+![png](report_files/report_14_2.png)
     
 
 
@@ -317,12 +333,13 @@
     
     Preprocessing responses to
     - drop the rows with nan in either column
+    - drop the groups with only one person
     Saved data to percentage_growth_stats.csv
 
 
 
     
-![png](report_files/report_14_1.png)
+![png](report_files/report_16_1.png)
     
 
 
@@ -339,11 +356,12 @@ Stacked bar chart that plots how many people are in the group now (Q9) with the 
     
     Preprocessing responses to
     - drop the rows with nan in any of these columns
+    - select only groups with more than one person
     Saved data to roles_stats.csv
 
 
 
     
-![png](report_files/report_16_1.png)
+![png](report_files/report_18_1.png)
     
 
