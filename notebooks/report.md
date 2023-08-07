@@ -318,6 +318,7 @@ Stacked bar chart that plots how many people are in the group now (Q9) with the 
     
     Preprocessing responses to
     - drop the rows with nan in any of these columns
+    Saved data to roles_stats.csv
 
 
 
