@@ -242,6 +242,8 @@
     - replace All with 100%
     - replace values with the first number found in string
     - replace 50/50 with 50%
+    - find the first number in the string (if any) and restrict the answer to that
+    - convert to numeric as integers
     Saved q17_stats to q17_stats.csv
 
 
@@ -259,7 +261,8 @@
     - drop the empty rows
     - replace values with 0 if they start witn No
     - replace values with 100 if they start witn All/Most
-    - find the first number in the values in the qst column
+    - find the first number in the string (if any) and restrict the answer to that
+    - convert to numeric as integers
     Saved q18_stats to q18_stats.csv
 
 
@@ -267,4 +270,9 @@
     
 ![png](report_files/report_8_1.png)
     
+
+
+## Q19: Roughly what percentage of your group's time is spent on free at point of use activities. e.g. Training, Institutional support, free project support/consultancy.
+
+    Q19: Roughly what percentage of your group's time is spent on free at point of use activities. e.g. Training, Institutional support, free project support/consultancy.
 
