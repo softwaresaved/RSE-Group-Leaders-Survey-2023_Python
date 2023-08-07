@@ -201,7 +201,6 @@
 ## Q17: Roughly what percentage of your roles are open-ended/permanent?
 
     Q17: Roughly what percentage of your roles are open-ended/permanent?
-    ['75' '80' '0' '100' '50' '70' '25' '20' '30' '86' '8' '40' '33']
 
 
 
