@@ -91,7 +91,29 @@ def validate_setup_and_data(setup, dset):
     return validated
 
 
-def process_checkboxes(dset, setup):
+def preprocess_text(dset, setup):
+    """ Process the text responses.
+    Args:
+        dset (pd.DataFrame): data frame of the survey responses
+        setup (dict): setup dictionary
+    Returns:
+        dset (pd.DataFrame): data frame of the survey responses
+
+    """
+
+    for qst in setup.keys():
+        if setup[qst]["type"] != "text":
+            continue
+
+        # fill the empty cells with ""
+        dset[qst] = dset[qst].fillna("")
+        # replace the new line characters with spaces
+        dset[qst] = dset[qst].str.replace("\n", " ", regex=True)
+
+    return dset
+
+
+def preprocess_checkboxes(dset, setup):
     """ Process the checkbox responses.
     Args:
         dset (pd.DataFrame): data frame of the survey responses
@@ -160,7 +182,7 @@ def derive_checkbox_stats(dset, setup, qst):
     dset_melted = dset_melted.set_index('Timestamp')
 
     # replace the answer column with the option name
-    dset_melted["answer"].replace(f"{qst}_option_", "", regex=True, inplace=True)    
+    dset_melted["answer"].replace(f"{qst}_option_", "", regex=True, inplace=True)
     dset_melted['answer'] = dset_melted['answer'].apply(lambda x: opts[int(x) - 1])
 
     # create a stats dataframe with the counts for the answer column

@@ -138,13 +138,9 @@
 | QMUL                                    |                                                                                                                                                                                                                                                                                                                         |
 | University of Bath                      | Industry (2)                                                                                                                                                                                                                                                                                                            |
 | Castep Development, York                |                                                                                                                                                                                                                                                                                                                         |
-| Roslin Franklin Institute               | One left for industry + pay rise + more convenient commute
-One left as they did not complete probation
-One left for a similar level RSE role with similar pay in an area of the country they preferred.                                                                                                                                                                                                                                                                                                                         |
+| Roslin Franklin Institute               | One left for industry + pay rise + more convenient commute One left as they did not complete probation One left for a similar level RSE role with similar pay in an area of the country they preferred.                                                                                                                 |
 | University of Reading                   |                                                                                                                                                                                                                                                                                                                         |
-| UKAEA                                   | Position in industry: 2
-Different research position at another institution: 1
-Different internal research position: 1                                                                                                                                                                                                                                                                                                                         |
+| UKAEA                                   | Position in industry: 2 Different research position at another institution: 1 Different internal research position: 1                                                                                                                                                                                                   |
 | University of Nottingham                | 6 to industry, 1 to NHS, 1 to further study, 1 transferred to Central IT team, 1 unknown                                                                                                                                                                                                                                |
 | University of Birmingham                | Position in industry                                                                                                                                                                                                                                                                                                    |
 | University of Warwick                   |                                                                                                                                                                                                                                                                                                                         |
@@ -205,6 +201,7 @@ Different internal research position: 1                                         
 ## Q17: Roughly what percentage of your roles are open-ended/permanent?
 
     Q17: Roughly what percentage of your roles are open-ended/permanent?
+    ['75' '80' '0' '100' '50' '70' '25' '20' '30' '86' '8' '40' '33']
 
 
 
@@ -216,36 +213,42 @@ Different internal research position: 1                                         
 ## Q18: Does your Group have a cost recovery target? If so, what is that cost recovery target?
 
     Q18: Does your Group have a cost recovery target? If so, what is that cost recovery target?
-                                         q3                                                                                                                                                                                                                            q18
-                    Imperial College London                                                                                                                                                No. We aim for 70%, but it is not a hard boundary as salaries are underwritten.
-                       Newcastle University                                                                                                                                                                                                                            80%
-        SWC/GCNU Neuroinformatics Unit, UCL                                                                                                                                                                                                                           None
-                       Kings College London                                                                                                                                                                                                                       70 (TBC)
-                       University of Oxford                                                                                                                                                                                                                           100%
-                      Alan Turing Institute                                                                                                                                                                                                70-75% against funded projects.
-                    University of Cambridge                                                                                                                                                                                                                            90%
-                        University of Leeds                                                                                                                                                                                                                              0
-                                        UCL                                                                                                                                                                                        Not explicitly, but ~15% is core funded
-       Research Software Group, St. Andrews                                                                                                                                                                                                                             No
-                                        QUB                                                                                                             0 at present. Aim for it to rise to 100% but with underwriting from central uni to guarantee competitive salaries.
-                       University of Exeter                                                                                                                                                                                                                            80%
-                    University of Sheffield                                                                                                                                                                                                                 80% Not strict
-                   Castep Development, York                                                                                                                                                                                       Most positions are directly grant funded
-                  Roslin Franklin Institute                                                                                                                                                                                                                             No
-                                      UKAEA                                                                                                                                                                 Approx. 15 FTE (100% of staff costs, less 15% overheads/FATPU)
-                   University of Nottingham                                                                                                                                                                                                                           100%
-                   University of Birmingham                                                                                                                                                                                                                             40
-                      University of Warwick                                                                                                                                                                                                                            60%
-                   University of Manchester                                                                                                                                                       No specific target, just to recover above the baseline which is a given.
-                      University of Bristol All RSEs except for the 2 core (myself and our free-at-the-point-of-use RSE) have to be 100% research funded (we operate a RSE-as-a-postdoc model). We need to secure funds before hiring, in the same way as hiring postdocs.
-                         King's Digital Lab                                                60% target for overall cost recovery (our costs currently include infrastructure costs in addition to staff) Over last couple of years we have actually only reached around 43%
-                 MVLS University of Glasgow                                                                                                                                                     Reaching 70% within five years; excludes Head of RSE (0% recovery target).
-                         University of York                                                                                                                                                                                                                            80%
-        Digital Humanities Group, Lancaster                                                                                                                                                                                                                      Yes. 100%
-                    University of Liverpool                                                                                                                                                                                                                           None
-                  University of Southampton                                                                                                                                                                                                                           100%
-      Swansea Academy of Advanced Computing                                                                                                                                                                                                               No formal target
-    Soft Matter and Biophysics, Strathclyde                                                                                                                                                                                                                             No
-                            EPCC, Edinburgh                                                                                                                                                                                                                           100%
-                       Research IT, Bristol                                                                                                                                                                                                                            60%
+    Timestamp
+    12/12/2022 10:32:07    No. We aim for 70%, but it is not a hard bound...
+    12/12/2022 10:42:05                                                  80%
+    12/12/2022 11:04:31                                                 None
+    12/12/2022 11:05:56                                             70 (TBC)
+    12/12/2022 12:55:10                                                 100%
+    12/12/2022 13:23:06                      70-75% against funded projects.
+    12/12/2022 14:40:00                                                  90%
+    12/12/2022 14:41:26                                                    0
+    12/12/2022 15:30:58              Not explicitly, but ~15% is core funded
+    12/12/2022 21:30:13                                                   No
+    14/12/2022 10:57:02    0 at present. Aim for it to rise to 100% but w...
+    16/12/2022 10:23:50                                                  80%
+    03/01/2023 09:23:38                                       80% Not strict
+    06/01/2023 12:59:16                                                     
+    06/01/2023 13:01:37                                                     
+    06/01/2023 13:09:05             Most positions are directly grant funded
+    06/01/2023 14:43:18                                                   No
+    06/01/2023 16:43:32                                                     
+    09/01/2023 08:35:40    Approx. 15 FTE (100% of staff costs, less 15% ...
+    09/01/2023 14:17:17                                                 100%
+    09/01/2023 20:42:27                                                   40
+    10/01/2023 09:27:32                                                  60%
+    10/01/2023 09:27:57    No specific target, just to recover above the ...
+    10/01/2023 10:10:15    All RSEs except for the 2 core (myself and our...
+    10/01/2023 11:17:33    60% target for overall cost recovery (our cost...
+    10/01/2023 11:48:09    Reaching 70% within five years; excludes Head ...
+    10/01/2023 11:54:41                                                     
+    11/01/2023 16:41:16                                                  80%
+    12/01/2023 13:00:07                                            Yes. 100%
+    13/01/2023 10:07:36                                                 None
+    13/01/2023 10:40:36                                                 100%
+    13/01/2023 13:35:29                                     No formal target
+    13/01/2023 18:58:20                                                   No
+    18/01/2023 11:55:23                                                     
+    18/01/2023 14:48:02                                                 100%
+    19/01/2023 16:02:14                                                  60%
+    Name: q18, dtype: object
 
