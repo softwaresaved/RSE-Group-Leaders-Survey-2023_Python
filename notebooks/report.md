@@ -275,4 +275,16 @@
 ## Q19: Roughly what percentage of your group's time is spent on free at point of use activities. e.g. Training, Institutional support, free project support/consultancy.
 
     Q19: Roughly what percentage of your group's time is spent on free at point of use activities. e.g. Training, Institutional support, free project support/consultancy.
+    
+    Preprocessing responses to
+    - drop the empty rows
+    - find the first number in the string (if any) and restrict the answer to that
+    - convert to numeric as integers
+    Saved q19_stats to q19_stats.csv
+
+
+
+    
+![png](report_files/report_10_1.png)
+    
 
