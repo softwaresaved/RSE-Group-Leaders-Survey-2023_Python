@@ -254,37 +254,17 @@
 ## Q18: Does your Group have a cost recovery target? If so, what is that cost recovery target?
 
     Q18: Does your Group have a cost recovery target? If so, what is that cost recovery target?
-    Timestamp
-    12/12/2022 10:32:07                                                    0
-    12/12/2022 10:42:05                                                  80%
-    12/12/2022 11:04:31                                                    0
-    12/12/2022 11:05:56                                             70 (TBC)
-    12/12/2022 12:55:10                                                 100%
-    12/12/2022 13:23:06                      70-75% against funded projects.
-    12/12/2022 14:40:00                                                  90%
-    12/12/2022 14:41:26                                                    0
-    12/12/2022 15:30:58                                                    0
-    12/12/2022 21:30:13                                                    0
-    14/12/2022 10:57:02    0 at present. Aim for it to rise to 100% but w...
-    16/12/2022 10:23:50                                                  80%
-    03/01/2023 09:23:38                                       80% Not strict
-    06/01/2023 13:09:05             Most positions are directly grant funded
-    06/01/2023 14:43:18                                                    0
-    09/01/2023 08:35:40    Approx. 15 FTE (100% of staff costs, less 15% ...
-    09/01/2023 14:17:17                                                 100%
-    09/01/2023 20:42:27                                                   40
-    10/01/2023 09:27:32                                                  60%
-    10/01/2023 09:27:57                                                    0
-    10/01/2023 10:10:15    All RSEs except for the 2 core (myself and our...
-    10/01/2023 11:17:33    60% target for overall cost recovery (our cost...
-    10/01/2023 11:48:09    Reaching 70% within five years; excludes Head ...
-    11/01/2023 16:41:16                                                  80%
-    12/01/2023 13:00:07                                            Yes. 100%
-    13/01/2023 10:07:36                                                    0
-    13/01/2023 10:40:36                                                 100%
-    13/01/2023 13:35:29                                                    0
-    13/01/2023 18:58:20                                                    0
-    18/01/2023 14:48:02                                                 100%
-    19/01/2023 16:02:14                                                  60%
-    Name: q18, dtype: object
+    
+    Preprocessing responses to
+    - drop the empty rows
+    - replace values with 0 if they start witn No
+    - replace values with 100 if they start witn All/Most
+    - find the first number in the values in the qst column
+    Saved q18_stats to q18_stats.csv
+
+
+
+    
+![png](report_files/report_8_1.png)
+    
 
