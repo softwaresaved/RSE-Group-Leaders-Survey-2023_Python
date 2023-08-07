@@ -23,7 +23,7 @@
     The main RSE Group for the university/research organisation                              26          72
     An RSE Group for a specific subset/group within the university/research organisation      8          22
     An RSE Group for multiple universities/research organisations                             4          11
-    Saved q4_stats to q4_stats.csv
+    Saved data to q4_stats.csv
 
 
 
@@ -59,7 +59,7 @@
     Group leader                                                                     1
     Head Research Engineer                                                           1
     Team Manager                                                                     1
-    Saved q5_stats_count to q5_stats_count.csv
+    Saved data to q5_stats_count.csv
     
     Q6: In what year was your group founded?
 
@@ -70,7 +70,7 @@
     
 
 
-    Saved q6_scatter to q6_scatter.csv
+    Saved data to q6_scatter.csv
     
     Q7: Where is your group based?
                                                         count  percentage
@@ -79,7 +79,7 @@
     Academic Department - supporting whole Institution      5          14
     Academic Department - supporting a specific domain      4          11
     Independent Institute/Facility                          4          11
-    Saved q7_stats to q7_stats.csv
+    Saved data to q7_stats.csv
 
 
 
@@ -98,7 +98,7 @@
     
 
 
-    Saved q8_scatter to q8_scatter.csv
+    Saved data to q8_scatter.csv
     
     Q9: How many people are currently in your group in total?
 
@@ -109,7 +109,7 @@
     
 
 
-    Saved q9_scatter to q9_scatter.csv
+    Saved data to q9_scatter.csv
     
     Q10: How many people in your group are in a more senior role than a standard RSE (i.e. typically receiving greater pay than a postdoctoral researcher)?
 
@@ -120,7 +120,7 @@
     
 
 
-    Saved q10_scatter to q10_scatter.csv
+    Saved data to q10_scatter.csv
     
     Q11: How many people in your group are in a less senior role than a standard RSE (e.g. a junior RSE)?
 
@@ -131,7 +131,7 @@
     
 
 
-    Saved q11_scatter to q11_scatter.csv
+    Saved data to q11_scatter.csv
     
     Q12: How many staff have left your group in the last two years?
 
@@ -142,10 +142,10 @@
     
 
 
-    Saved q12_scatter to q12_scatter.csv
+    Saved data to q12_scatter.csv
     
     Q13: Where did those staff go?
-    Saved q13_answers to q13_answers.csv
+    Saved data to q13_answers.csv
 
 
 
@@ -199,7 +199,7 @@
     
 
 
-    Saved q14_scatter to q14_scatter.csv
+    Saved data to q14_scatter.csv
     
     Q15: Please rate the level of demand for your Group's services
                                                           count  percentage
@@ -208,7 +208,7 @@
     Demand is met by the number of RSEs                       4          11
     Demand is less than the number of RSEs                    0           0
     Demand is significantly less than the number of RSEs      0           0
-    Saved q15_stats to q15_stats.csv
+    Saved data to q15_stats.csv
 
 
 
@@ -224,7 +224,7 @@
     We lack the funding to make new positions available                                                                 12          33
     We can attract RSEs, but can't hire them because the salary and other benefits we can offer are not competitive      9          25
     We have funding, but we can't find RSEs to hire                                                                      7          19
-    Saved q16_stats to q16_stats.csv
+    Saved data to q16_stats.csv
 
 
 
@@ -244,7 +244,7 @@
     - replace 50/50 with 50%
     - find the first number in the string (if any) and restrict the answer to that
     - convert to numeric as integers
-    Saved q17_stats to q17_stats.csv
+    Saved data to q17_stats.csv
 
 
 
@@ -263,7 +263,7 @@
     - replace values with 100 if they start witn All/Most
     - find the first number in the string (if any) and restrict the answer to that
     - convert to numeric as integers
-    Saved q18_stats to q18_stats.csv
+    Saved data to q18_stats.csv
 
 
 
@@ -280,11 +280,27 @@
     - drop the empty rows
     - find the first number in the string (if any) and restrict the answer to that
     - convert to numeric as integers
-    Saved q19_stats to q19_stats.csv
+    Saved data to q19_stats.csv
 
 
 
     
 ![png](report_files/report_10_1.png)
+    
+
+
+## Percentage growth in group size
+
+    How many people are currently in your group in total?
+    How many new RSEs positions have been added to your group in the last two years?
+    
+    Preprocessing responses to
+    - drop the rows with nan in either column
+    Saved data to percentage_growth_stats.csv
+
+
+
+    
+![png](report_files/report_12_1.png)
     
 
