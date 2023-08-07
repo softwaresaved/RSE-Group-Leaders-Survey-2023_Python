@@ -333,7 +333,7 @@
     
     Preprocessing responses to
     - drop the rows with nan in either column
-    - drop the groups with only one person
+    - drop the groups with less than 5 people
     Saved data to percentage_growth_stats.csv
 
 
@@ -356,7 +356,7 @@ Stacked bar chart that plots how many people are in the group now (Q9) with the 
     
     Preprocessing responses to
     - drop the rows with nan in any of these columns
-    - select only groups with more than one person
+    - drop the groups with less than 5 people
     Saved data to roles_stats.csv
 
 
