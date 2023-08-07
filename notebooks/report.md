@@ -304,3 +304,24 @@
 ![png](report_files/report_12_1.png)
     
 
+
+## People's roles
+
+Stacked bar chart that plots how many people are in the group now (Q9) with the bar made up of 
+1. how many are more junior RSEs (Q11)
+2. standard RSEs (Q9 - (Q10+Q11))
+3. more senior RSEs (Q10)
+
+    How many people are currently in your group in total?
+    How many people in your group are in a less senior role than a standard RSE (e.g. a junior RSE)?
+    How many people in your group are in a more senior role than a standard RSE (i.e. typically receiving greater pay than a postdoctoral researcher)?
+    
+    Preprocessing responses to
+    - drop the rows with nan in any of these columns
+
+
+
+    
+![png](report_files/report_14_1.png)
+    
+
