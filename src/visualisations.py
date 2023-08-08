@@ -84,7 +84,7 @@ def plot_hsbarchart(dset,
     plt.gcf().set_facecolor(FIGURE_BGCOLOR)
     plt.gcf().set_size_inches(10, 10)
     plt.legend(bbox_to_anchor=(0.5, 1.1), loc='upper center', ncol=3)
-    
+
     plt.show()
 
 
@@ -117,7 +117,7 @@ def print_answers(dset, setup, columns):
     dset2print = dset[columns].copy()
     dset2print = dset2print.fillna('')
     dset2print.set_index(columns[0], inplace=True)
-    
+
     dset2print.index.name = setup[dset2print.index.name]["text"]
     dset2print.columns = [setup[dset2print.columns[0]]["text"]]
     display(Markdown(dset2print.to_markdown(tablefmt="github")))
